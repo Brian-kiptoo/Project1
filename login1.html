@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login page</title>
+    <style>
+        body{
+            background-color:rgb(241, 71, 100);
+            color: white;
+            font-family: calibri, Helvetica, sans-serif;
+            font-size: medium;
+            position: relative;
+            cursor: pointer;
+
+        }
+        button{
+            background-color: #4CAF50;
+            width:auto;
+            color: orange;
+            padding: 6px;
+            width: 100px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+        }
+        input{
+           padding: 4px; 
+        }
+        .container{
+            background-color: lightblue;
+            color: blue;
+            padding: 25px;
+        }
+     
+        form{
+            border:3px solid #f1f1f1;
+
+        }
+        input[type=text],input[type=password]{
+            width: 50%;
+            margin: 8px 0;
+            padding: 12px 15px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+            position: relative;
+        }
+        input[type=radio]{
+            display: inline-block;
+        }
+      
+        break-point::before{
+            content: "hiddentext";
+            font-size: 0;
+            display: block;
+            line-height: 0;
+        }
+        break-point::after{
+            content: "hiddentext";
+            font-size: 0;
+            display: block;
+            line-height: 0;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Login Form:</h1>
+    <form action="login.php" method="post">
+        <div class="container">
+            <label> username:</label>
+            <input type="text" placeholder="Enter Username" name="Uname" required="required">
+            <br/><br/>
+            <label>password:</label>
+            <input type="password" placeholder="Enter password" name="pwd" required="required">
+            <br/><br/>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <button type="submit">Login</button>
+            <button type="reset" class="cancelbtn">Cancel</button>
+            <br/><br/>
+            <input type="checkbox" checked="checked">Remember me
+            <a href="#">Forgot password</a>
+        </div>
+    </form>
+</body>
+</html>
+
